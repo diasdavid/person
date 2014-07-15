@@ -6,7 +6,6 @@ var stdin = process.openStdin();
 stdin.setEncoding('utf8');
 
 stdin
-  .pipe()
   .pipe(es.split())
   .pipe(es.map(function (data, callback) {
     if(data.trim() !== '') {
